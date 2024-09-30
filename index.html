@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokémon Weebpage</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/index.css">
+  <script src="index.js"></script>
+</head>
+<body>
+
+  
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Poke Main</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="info.html">Poke Search</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="lore.html">Poke Lore </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>    
+  </header>
+<div>
+    <h1>The World of Pokémon!</h1>
+<p class="poke-welcome">Welcome to the best Pokemon fan site on the weeb, I mean the web.  </p>
+
+</div>
+  
+  
+<div class="container mt-5">
+    
+    <div id="pokemonCarousel" class="carousel slide" data-bs-ride="carousel" style="width: 500px; height: 300px; margin: auto;">
+      <div class="carousel-inner">
+        
+        <div class="carousel-item active">
+          <img src="images/mew.png" class="d-block w-100" alt="Mew" style="height: 300px;">
+          <div class="carousel-caption d-none d-md-block">
+
+          </div>
+        </div>
+        
+        <div class="carousel-item">
+          <img src="images/alakazam.png" class="d-block w-100" alt="Alakazam" style="height: 300px;">
+          <div class="carousel-caption d-none d-md-block">
+        
+          </div>
+        </div>
+        
+        <div class="carousel-item">
+          <img src="images/pidgeot.png" class="d-block w-100" alt="Pidgeot" style="height: 300px;">
+          <div class="carousel-caption d-none d-md-block">
+         
+          </div>
+        </div>
+        <div class="carousel-item">
+            <img src="images/war1.png" class="d-block w-100" alt="War Turtle" style="height: 300px;">
+            <div class="carousel-caption d-none d-md-block">
+             
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/gengar.png" class="d-block w-100" alt="Gengar" style="height: 300px;">
+            <div class="carousel-caption">
+          
+            </div>
+          </div>
+      </div>
+
+      
+      <button class="carousel-control-prev" type="button" data-bs-target="#pokemonCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#pokemonCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  
+<br>
+<br>
+  
+  <div class="container mt-5">
+    <div class="row">
+      
+      <div class="col-md-4">
+        <div class="card-pika">
+            <img src="images/pikachu.png" class="sticker.img" alt="Pikachu" style="height: 70px; width: 70px; margin-left: 5px; margin-top: 5px; ">
+          <div class="card-body">
+            <h5 class="card-title">Pikachu</h5>
+            <p class="card-text">Type: <span class="badge bg-warning text-dark">Electric</span></p>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#pikachuModal" style="margin-left: 5px; margin-bottom: 5px;">View Details</button>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="col-md-4">
+        <div class="card-char">
+          <img src="images/char.png" class="card-img-top" alt="Charizard" style="height: 70px; width: 70px; margin-left: 5px; margin-top: 5px; ">
+          <div class="card-body">
+            <h5 class="card-title">Charizard</h5>
+            <p class="card-text">Type: <span class="badge bg-danger">Fire</span> <span class="badge bg-primary">Flying</span></p>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#charizardModal" style="margin-left: 5px; margin-bottom: 5px;">View Details</button>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="col-md-4">
+        <div class="card-bulb">
+          <img src="images/bulb.png" class="sticker.img" alt="Bulbasaur" style="height: 70px; width: 70px; margin-left: 5px; margin-top: 5px;">
+          <div class="card-body">
+            <h5 class="card-title">Bulbasaur</h5>
+            <p class="card-text">Type: <span class="badge bg-success">Grass</span> <span class="badge bg-primary">Poison</span></p>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#bulbasaurModal" style="margin-left: 5px; margin-bottom: 5px;">View Details</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="modal fade" id="pikachuModal" tabindex="-1" aria-labelledby="pikachuModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="pikachuModalLabel">Pikachu Details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <ul class="list-group">
+            <li class="list-group-item">HP: 55</li>
+            <li class="list-group-item">Attack: 50</li>
+            <li class="list-group-item">Speed: 90</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="modal fade" id="charizardModal" tabindex="-1" aria-labelledby="charizardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="charizardModalLabel">Charizard Details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <ul class="list-group">
+            <li class="list-group-item">HP: 78</li>
+            <li class="list-group-item">Attack: 84</li>
+            <li class="list-group-item">Speed: 100</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="modal fade" id="bulbasaurModal" tabindex="-1" aria-labelledby="bulbasaurModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="bulbasaurModalLabel">Bulbasaur Details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <ul class="list-group">
+            <li class="list-group-item">HP: 60</li>
+            <li class="list-group-item">Attack: 62</li>
+            <li class="list-group-item">Defense: 63</li>
+          </ul>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-light text-center text-lg-start mt-5">
+    <div class="container p-4">
+        <div class="row">
+            
+            <div class="col-lg-6 col-md-12 mb-4">
+                <h5 class="text-uppercase">About Pokémon</h5>
+                <p>
+                   Pokemon means pocket monsters. Pokemon is a media franchise created by Satoshi Tajiri and Ken Sugimori and is owned by Nintendo, Game Freak, and Creatures. The franchise was created by Satoshi Tajiri and Ken Sugimori and is centered on fictional creatures called "Pokemon".
+                </p>
+            </div>
+            
+           
+            <div class="col-lg-3 col-md-6 mb-4">
+                <h5 class="text-uppercase">Explore</h5>
+                <ul class="list-unstyled">
+                    <li><a href="index.html" class="text-dark">Home</a></li>
+                    <li><a href="info.html" class="text-dark">Pokémon Search</a></li>
+                    <li><a href="#" class="text-dark">Pokémon Lore</a></li>
+                </ul>
+            </div>
+
+            
+            <div class="col-lg-3 col-md-6 mb-4">
+                <h5 class="text-uppercase">Find Us </h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-dark">Email: pokefake@pokemon.com</a></li>
+                    <li><a href="#" class="text-dark">Twitter: @pokefake</a></li>
+                    <li><a href="#" class="text-dark">Instagram: @pokefake</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="text-center p-3 bg-dark text-white">
+        © 2024 Pokémon Fake Fan Fiction Project
+    </div>
+</footer>
+
+
+
+ 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

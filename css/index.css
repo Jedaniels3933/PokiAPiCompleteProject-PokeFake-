@@ -1,0 +1,66 @@
+body {
+    background-image: url('https://wallpapercave.com/wp/wp995451.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: rgb(231, 167, 28);
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: 1.6;
+    font-weight: 400;
+    background-color: rgba(0, 0, 0, 0.5);
+
+}
+  
+.card-pika {
+    background-image: url('https://i.ebayimg.com/images/g/POgAAOSwfspi-FMA/s-l1200.jpg'); 
+    border-radius: 5px;
+    background-position: center;
+    background-size: cover;
+
+  }  
+
+.card-char {
+    background-image: url('https://i.redd.it/which-is-your-favorite-art-to-use-for-basic-energy-v0-73st7lmtncmb1.jpg?width=700&format=pjpg&auto=webp&s=08cb9256f9345827e0ef2516d41b343c7a2daabb'); 
+    border-radius: 10px;
+    background-position: center;
+    background-size: cover;
+
+  }
+
+.card-bulb {
+    background-image: url('https://i.pinimg.com/736x/e4/c5/55/e4c555c08597e023b4f30f61e0d7ad21.jpg'); 
+    border-radius: 15px;
+    background-position: center;
+    background-size: cover;
+
+}
+
+h1 {
+    text-align: center;
+    color: rgb(59, 8, 245);
+
+}
+
+.poke-welcome {
+    text-align: center;
+    padding-top: 80px;
+    color: orange;
+
+}
+
+.carousel-caption {
+    margin-top: 30px;
+    color: rgb(231, 23, 23);
+
+}
+
+p{
+    text-align: center;
+    color: rgb(32, 52, 109);
+
+}
+
